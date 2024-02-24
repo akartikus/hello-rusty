@@ -1,1 +1,8 @@
 rust/target
+# Godot 4+ specific ignores
+godot/.godot/
+
+# Godot-specific ignores
+godot/.import/
+godot/export.cfg
+godot/export_presets.cfg
