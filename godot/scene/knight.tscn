@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://6qfvxtav3xj7"]
+
+[ext_resource type="PackedScene" uid="uid://beoixboo1s16" path="res://assets/Knight.glb" id="1_30c03"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8b7fs"]
+size = Vector3(2.29318, 2.36285, 1)
+
+[node name="Knight" type="Knight"]
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="Knight" parent="Pivot" instance=ExtResource("1_30c03")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.112839, 1.21518, 0)
+shape = SubResource("BoxShape3D_8b7fs")
