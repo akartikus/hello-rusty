@@ -1,3 +1,4 @@
+mod knight;
 mod player;
 
 use godot::prelude::*;
