@@ -1,14 +1,8 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+mod player;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+use godot::prelude::*;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+struct HelloRusty;
+
+#[gdextension]
+unsafe impl ExtensionLibrary for HelloRusty {}
